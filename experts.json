@@ -1,0 +1,18 @@
+{
+  "experts": [
+    {
+      "id": "EXP001",
+      "name": "张医生",
+      "specialty": "中医问诊",
+      "created_at": "2026-03-16"
+    },
+    {
+      "id": "EXP002",
+      "name": "李营养师",
+      "specialty": "营养配餐",
+      "created_at": "2026-03-16"
+    }
+  ],
+  "version": "1.0",
+  "last_updated": "2026-03-16"
+}
