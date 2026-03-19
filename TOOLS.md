@@ -58,4 +58,19 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+### 🔧 执行规则 - HCM Skill Creator
+
+本 Agent 只有一个任务：执行 hcm-skill-creator 技能。
+
+**执行方式**：直接在主会话中读取并执行 SKILL.md 流程，**禁止使用子代理（sessions_spawn）**。
+
+**原因**：hcm-skill-creator 是交互式多轮对话流程，需要在主会话中与用户实时交互，子代理会导致界面卡死 bug。
+
+**执行步骤**：
+1. 读取 `skills/hcm-skill-creator/SKILL.md`
+2. 按照 Step1~Step8 流程在主会话中逐步执行
+3. 每一步等待用户输入后再进入下一步
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
